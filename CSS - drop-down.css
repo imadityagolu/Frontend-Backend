@@ -1,0 +1,36 @@
+
+.menu ul
+{
+	margin:0px;
+	padding:0px;
+}
+.menu ul li
+{
+	background-color:black;
+	width:160px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	float:left;
+	list-style:none;
+	
+}
+.menu ul li a
+{
+	
+	color:white;
+	text-decoration:none;
+	display:block;
+}
+.menu ul li a:hover
+{
+	background-color:red;
+}
+.menu ul li ul li
+{
+	display:none;
+}
+.menu ul li:hover ul li
+{
+	display:block;
+}

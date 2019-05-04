@@ -1,0 +1,33 @@
+<html><head><title>Calculator</title></head>
+<script>
+function cal()
+{
+	if(calculator.r1.value == "" || calculator.r2.value == "")
+	{
+		alert("Input Both Fields.");
+	}
+	var a , b , c , r ;
+	 a = document.getElementById("r1").value;
+	 b = document.getElementById("r2").value;
+	 c = document.getElementById('oper').value;
+	 r = eval(a+c+b);
+	document.write(r);
+}
+</script>
+<body>
+	<form name="calculator">
+		1st Number <input type="text" id="r1">
+		<br><br>
+		2nd Number <input type="text" id="r2">
+		<br><br>
+		Operation	<select id="oper">
+						<option value="+">+</option>
+						<option value="-">-</option>
+						<option value="*">x</option>
+						<option value="/">/</option>
+					</select>
+		<br><br>
+		<input type="submit" value="Calculate" onclick="cal();">
+	</form>
+</body>
+</html>

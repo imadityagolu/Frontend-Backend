@@ -1,0 +1,35 @@
+<html><head><title>Registation</title></head>
+<script>
+function Register()
+{
+if(registation.first.value == '' || registation.last.value == '' || registation.uid.value == '' || registation.pwd.value == '' || registation.date.value == '' || registation.course.value == '' || registation.gender.value == '' )
+	{
+	alert("All The Fields Are Required !");
+	return;
+	}
+	var a = document.getElementById("first").value;
+	var b = document.getElementById("last").value;
+	var c = document.getElementById("uid").value;
+	var d = document.getElementById("pwd").value;
+	var e = document.getElementById("date").value;
+	var f = document.getElementById("course").value;
+	var g = document.getElementById("gender").value;
+	alert(a+b+c+d+e+f+g);
+}
+</script>
+<body>
+	<center><br><br><br><h2>Registation</h2><br><br>
+	<form name="registation" action="" method="POST" enctype="multipart/form-data"><br><br><br>
+		<table>
+			<tr><td>First Name : </td><td><input type = "text" id="first"></td></tr>
+			<tr><td>Last Name : </td><td><input type = "text" id="last"></td></tr>
+			<tr><td>User ID :</td><td><input type = "text" id="uid"></td></tr>
+			<tr><td>Password : </td><td><input type="text" id="pwd"></td></tr>
+			<tr><td>D O B : </td><td><input type="date" id="date"></td></tr>
+			<tr><td>I'm : </td><td><select id="course"><option>Student</option><option>Employee</option></select></td></tr>
+			<tr><td>Gender : </td><td><input type="radio" name="gender" id="gender" value="Male">Male</input><input type="radio" name="gender" id="gender" value="Female">Female</input></td></tr>
+		</table>
+	<br><input type="submit" value="Register" name="SEND" onClick="Register();">
+	</form>
+</body>
+</html>

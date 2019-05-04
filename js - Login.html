@@ -1,0 +1,28 @@
+<html>
+<head>
+<script language="javascript">
+function log()
+{
+	var user,pass;
+	user = login.use.value;
+	pass = login.pas.value;
+	
+	if(user == "Aditya" && pass == "12345")
+	{
+alert('welcome');
+	}
+	else
+	{
+alert('Bhakk');
+	}
+}
+</script>
+</head>
+<body>
+<form name="login">
+User Name : <input type="text" name="use">
+Password : <input type="password" name="pas">
+<input type="Button" value="login" onclick="log();">
+</form>
+</body>
+</html>
