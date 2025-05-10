@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <form method="get/post" action="index.html">
+        <lable>FORM</lable>
+        <br>
+        <label for="name">Name *</label>
+        <input id="name" type="text" name="name" placeholder="Enter you name" required autofocus autocomplete="on" size="20"/>
+        <br>
+        <lable>Age: </lable>
+        <input type="number" placeholder="enter your age" min="1" max="100" size="15" />
+        <br>
+        <lable>DOB:</lable>
+        <input type="date"/>
+        <br>
+        <lable for="email">e-mail: </lable>
+        <input type="email" name="email" id="email" placeholder="enter your email"/>
+        <br>
+        <lable>Phone number:</lable>
+        <input type="text" name="country code" value="+91" size="1" disabled="">
+        <input type="number" size="10">
+        <br>
+        <label for="pass">Password *</label>
+        <input id="pass" type="password" name="password" placeholder="Enter your password" required/>
+        <br>
+        <lable>Gender: </lable>
+        <input type="radio"/>Male
+        <input type="radio"/>Female
+        <br>
+        <lable>Hobbies: </lable>
+        <input type="checkbox" value="read"/>Reading
+        <input type="checkbox" value="gaming"/>gaming
+        <input type="checkbox" value="reels"/>reels
+        <br>
+        <lable>Qualification: </lable>
+        <select>
+            <option disabled selected>Select...</option>
+            <option value="xii">xii</option>
+            <option value="pg">graduation</option>
+        </select>
+        <br>
+        <lable>qualification: </lable>
+        <input type="text" list="datalist"/>
+        <datalist id="datalist">
+            <option value="xii">xii</option>
+            <option value="pg">graduation</option>
+            <option value="phd">phd</option>
+        </datalist>
+        <br>
+        <label for="address">Address :</label><br>
+        <textarea id="address" placeholder="Address" cols="30" rows="5" style="resize: none"></textarea>
+        <br>
+        <label for="">Color</label>
+        <input type="color" />
+        <br>
+        <label for="">Price Range</label>
+        <input type="range" min="1000" max="100000" step="1000" />
+        <br>
+        <lable>Choose a file: </lable>
+        <input type="file"/>
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">submit</button>
+        </form>
+    </body>
+</html>
